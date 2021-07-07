@@ -15,7 +15,12 @@
         }
     </style>
 </head>
-<body>
+<body onload="loading()">
+      <div id="loader">
+        <div class="lo">
+
+        </div>
+    </div>
     <div class="container-fluid home">
        
         <div class="row">
@@ -43,5 +48,11 @@
               </div>
         </div>
     </div>
+    <script>
+        var loga=document.getElementById('loader');
+        function loading(){
+            loga.style.display='none';
+        }
+    </script>
 </body>
 </html>
