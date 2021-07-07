@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        .row{
+            display: flex;
+            background-color: rgb(83, 82, 82);
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        img{
+            height: 200px;
+            width: 200px;
+            animation: box 5s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes box {
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+            
+        }
+        .container{
+            background:url("3616.jpg");
+            height: 100vh;
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body onload="fun()">
+    <div class="row" id="loading">
+<img src="https://i.pinimg.com/originals/6e/35/ef/6e35ef7687065eb1e4c037781f3c4cdc.png" alt="">
+    </div>
+    <div class="container">
+
+    </div>
+    <script>
+        var load=document.getElementById( "loading");
+        function fun(){
+            load.style.display='none';
+        }
+    </script>
+</body>
+</html>
