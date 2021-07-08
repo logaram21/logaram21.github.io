@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="voting.css">
+    <title>E-Voting System</title>
+</head>
+<body>
+    <div class="container">
+       
+        <div class="form">
+<fieldset class="p">
+    <legend>E-voting System</legend>
+    
+    <table>
+        <tr>
+            <td class="name">FirstName</td>
+            <td><input type="text" placeholder="Enter your Fname" name="" id="name"></td>
+        </tr>
+        <tr>
+            <td class="name">LastName</td>
+            <td><input type="text" placeholder="Enter your Lname" name="" id=""></td>
+        </tr>
+        <tr>
+            <td class="name">Address</td>
+            <td><input type="text" placeholder="Enter your Address" name="" id=""></td>
+        </tr>
+        <tr>
+            <td class="name">place</td>
+            <td>
+                <select name="" id="">
+                    <option value=""></option>
+                    <option value="Salem">Salem</option>
+                    <option value="Karur">Karur</option>
+                    <option value="Nammakal">Nammakal</option>
+                    <option value="Erode">Erode</option>
+                    <option value="Coimbatore">Coimbatore</option>
+                </select>
+                
+            </td>
+        </tr>
+        <tr>
+            <td class="name">Candidate Name</td>
+            <td>
+                <select name="" id="">
+                    <option value=""></option>
+                    <option value="Logaram">Logaram</option>
+                    <option value="Palanisamy">Palanisamy</option>
+                    <option value="Alagasen">Alagasen</option>
+                    <option value="Jayanthi">Jayanthi</option>
+                    <option value="Tarana">Tarana</option>
+                </select>
+
+            </td>
+        </tr>
+        <tr>
+            <td class="name">Party</td>
+            <td>
+                <select name="" id="">
+                    <option value=""></option>
+                    <option value="ADMK">ADMK</option>
+                    <option value="DMK">DMK</option>
+                    <option value="BJP">BJP</option>
+                    <option value="MNM">MNM</option>
+                    <option value="NTK">NTK</option>
+                </select>
+
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+        <td><input type="submit" class="" value="Vote" onclick="over()"></td>
+        </tr>
+    </table>
+<center>
+    <div id="result">
+
+    </div>
+    </center>
+</fieldset>
+
+        </div>
+    </div>
+<script>
+    function over(){
+       var name=document.getElementById("name").value;
+        document.getElementById("result").innerHTML=name+" Your vote is submitted.";
+    }
+</script>
+</body>
+</html>
