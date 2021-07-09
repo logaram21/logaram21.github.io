@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application-form</title>
+</head>
+<style>
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    font-family: sans-serif;
+    background:linear-gradient(45deg,rgba(255, 0, 0, 0.452),rgba(0, 0, 255, 0.575));
+background-position: center center;
+background-size: cover;
+background-repeat: no-repeat;
+height: 100vh;
+}
+.conta{
+    overflow-Y: scroll;
+    display: flex;
+    flex-direction: column;
+  
+    height: 100vh;
+    width: 50%;
+    margin: auto;
+ 
+    background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+@media only screen and (max-width:430px) {
+    .conta{
+        width: 100vw;
+    }
+    
+}
+h1{
+    text-align: center;
+    color: rgb(206, 55, 35);
+}
+.name{
+    padding: 10px;
+  font-size: 20px;
+}
+.input{
+    padding: 3px;
+    width: 200px;
+   
+    border-radius: 91px;
+background: #e0e0e0;
+box-shadow: inset 20px 20px 60px #bebebe,
+            inset -20px -20px 60px #ffffff;
+
+}
+</style>
+<body>
+    <div class="conta">
+
+    
+    <h1>Application-Form</h1>
+    <table>
+        <tr>
+            <td class="name">Name</td>
+            <td ><input type="text" name="name" id="name" class="input" required></td>
+        </tr>
+        <tr>
+            <td class="name">Father Name</td>
+            <td ><input type="text" name="name" id="name" class="input" required></td>
+        </tr>
+        <tr>
+            <td class="name">Postal Address</td>
+            <td ><input type="text" name="name" id="name" class="input" required></td>
+        </tr>
+        <tr>
+            <td class="name">Personal Address</td>
+            <td ><input type="text" name="name" id="name" class="input" required></td>
+        </tr>
+        <tr>
+            <td class="name">Sex</td>
+           <td><input type="radio" name="" id="" >Male
+           <input type="radio" name="" id="">Female</td>
+        </tr>
+        <tr>
+            <td class="name">City</td>
+            <td><select name="city" id="" class="input">
+                <option value="select..">select..</option>
+                <option value="Erode">Erode</option>
+                <option value="Salem">Salem</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Coimbatore">Coimbatore</option>
+                <option value="Karur">Karur</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td class="name">Course</td>
+            <td>
+                <select name="course" id="" class="input">
+                    <option value="Select..">Select..</option>
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="JS">JS</option>
+                    <option value="JSON">JSON</option>
+                    <option value="Vue">Vue</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td class="name">Course-Duration</td>
+            <td>
+                <select name="duration" id="" class="input">
+                    <option value="Select..">Select..</option>
+                    <option value="Part-time">Part-time</option>
+                    <option value="Full-time">Full-time</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td class="name">Pincode</td>
+            <td><input type="number" name="pin" id="" class="input" required></td>
+        </tr>
+        <tr>
+            <td class="name">EmailID</td>
+            <td><input type="email" name="pin" id="" class="input" required></td>
+        </tr>
+        <tr>
+            <td class="name">DOB</td>
+            <td><input type="date" name="pin" id="" class="input" required></td>
+        </tr>
+        <tr>
+            <td class="name">MobileNo</td>
+            <td><input type="number" name="" id="" class="input"></td>
+        </tr>
+        <tr>
+            <td><input type="reset" value="Reset" class="input"></td>
+            <td><input type="submit" value="Submit Form" class="input">
+            </td>
+        </tr>
+     
+    </table>
+    <br>
+    </div>
+</body>
+</html>
