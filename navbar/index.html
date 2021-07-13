@@ -63,7 +63,7 @@
         li::before{
             content: '';
             width: 100%;
-            height: 3px;
+            height: 2px;
             background-color: rgb(235, 84, 14);
             position: absolute;
             left: 0px;
@@ -89,7 +89,14 @@ backdrop-filter: blur( 4px );
 
             }
         }
-        
+         .noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                 
     </style>
 </head>
 <body>
@@ -98,10 +105,10 @@ backdrop-filter: blur( 4px );
         <div class="navbar">
             <div class="nav-items">
                <ul>
-                   <li>HOME</li>
-                   <li>CONTACT</li>
-                   <li>ABOUT</li>
-                   <li>SERVICES</li>
+                   <li class=".noselect">HOME</li>
+                   <li class="  .noselect">CONTACT</li>
+                   <li class="  .noselect">ABOUT</li>
+                   <li class="  .noselect">SERVICES</li>
                </ul>
             </div>
         </div>
