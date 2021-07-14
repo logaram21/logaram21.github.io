@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            font-family: sans-serif;
+            scroll-behavior: smooth;
+        }
+        .cont{
+            height: 100vh;
+            background:greenyellow;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+       
+            display: flex;
+            justify-content: flex-start;
+           
+        }
+        .contact{
+            background-color: grey;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            text-align: center;
+            line-height: 50px;
+        }
+        .about{
+            background-color: indianred;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            text-align: center;
+            line-height: 50px;
+        }
+        .services{
+            height: 100vh;
+            background-color:lightblue;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            text-align: center;
+            line-height: 50px;
+        }
+        .navbar{
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.61);
+            width: 20vw;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           animation-name: nav;
+           animation-fill-mode: forwards;
+           animation-duration: 2s;
+           position: fixed;
+           left: -300px;
+        }
+       
+        @keyframes nav {
+            to{
+                left: 0px;
+            }
+        }
+        .nav-items{
+           text-align: center;
+            padding: 20px;
+        }
+        li{
+            margin: 30px;
+            text-decoration: none;
+            list-style: none;
+            color:rgb(3, 3, 3);
+            font-weight: bold;
+            cursor: pointer;
+            position: relative;
+            transition: 0.5s ease-in;
+           
+        }
+        li:hover{
+           transform: scale(2);
+
+
+        }
+        li::before{
+            content: '';
+            width: 100%;
+            height: 1px;
+            background-color: rgb(235, 84, 14);
+            position: absolute;
+            left: 0px;
+           margin-top: -5px;
+           transform: scaleX(0);
+           transition: all 3s;
+           transform-origin: center;
+            
+        }
+        li:hover::before{
+            transform: scaleX(1);
+        }
+       
+        
+        @media only screen and (max-width:450px) {
+            .navbar{
+                width: 100vw;
+                height: 200px;
+             
+                background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+
+
+            }
+        }
+        a{
+            text-decoration: none;
+        }
+        .noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+.head{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+    line-height: 50px;
+}
+    </style>
+</head>
+<body>
+    <div class="cont" id="home">
+     
+        <div class="navbar">
+            <div class="nav-items">
+               <ul>
+                  <a href="#home"> <li class="noselect">HOME</li></a>
+                   <a href="#contact"><li class="noselect">CONTACT</li></a>
+                   <a href="#about"><li class="noselect">ABOUT</li></a>
+                   <a href="#services"><li class="noselect">SERVICES</li></a>
+               </ul>
+            </div>
+        </div>
+        <div class="head">
+            <h1>Welcome to my Website</h1>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique blanditiis excepturi optio magnam perferendis illum officia nobis commodi doloremque debitis, tempore pariatur fugiat quas! Hic repellat veniam beatae natus accusamus.</p>
+        </div>
+    </div>
+    <div class="contact" id="contact">
+<h1>Contact Section</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, itaque dicta? Ea repellat, veritatis vero nihil in illo odio libero consectetur id nemo. Quam accusantium magni earum aperiam obcaecati saepe.</p>
+    </div>
+    <div class="about" id="about">
+<h1>About Section</h1>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, vel. Expedita quos nemo vel nesciunt unde quaerat minus id nulla eius aliquid dolore cum quis sint a voluptate, porro culpa.</p>
+    </div>
+    <div class="services" id="services">
+<h1>Service Section</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum iusto ipsum aliquam maiores eius. Sequi temporibus nihil recusandae provident consequuntur, laboriosam repellat excepturi molestias autem perspiciatis ut neque voluptas incidunt?</p>
+    </div>
+</body>
+</html>
