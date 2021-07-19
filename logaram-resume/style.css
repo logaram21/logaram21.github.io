@@ -165,7 +165,7 @@ flex-wrap: wrap;
 .skills{
     display: flex;
     flex-wrap: wrap;
-    height: 100vh;
+    height: 50vh;
     width: 80vw;
     margin: auto;
     align-items: center;
