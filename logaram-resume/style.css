@@ -21,7 +21,7 @@ body{
     position: fixed;
    display: flex;
    height: 10%;
-   width:80% ;
+   width:81% ;
    z-index: 111;
    justify-content: space-between;
    align-items: center;
