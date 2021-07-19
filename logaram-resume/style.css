@@ -18,10 +18,10 @@ body{
     flex-direction: column;
 }
 .navbar{
-    position: fixed;
+   
    display: flex;
    height: 10%;
-   width:81% ;
+   width:100% ;
    z-index: 111;
    justify-content: space-between;
    align-items: center;
@@ -139,7 +139,7 @@ flex-wrap: wrap;
 }
  
 .education{
-    height: 60vh;
+    height: 75vh;
 width:80vw;
 margin: auto;
 display: flex;
@@ -165,7 +165,7 @@ flex-wrap: wrap;
 .skills{
     display: flex;
     flex-wrap: wrap;
-    height: 50vh;
+    height: 100vh;
     width: 80vw;
     margin: auto;
     align-items: center;
