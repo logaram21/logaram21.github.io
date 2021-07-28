@@ -1,0 +1,142 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+ 
+}
+body{
+    font-family: sans-serif;
+}
+.container{
+    background: url('Background.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+display: flex;
+border: 1px solid grey;
+border-radius: 8px;
+height:65vh;
+width: 50vw;
+margin: auto;
+
+
+}
+.col1{
+    background-color: rgb(1,50,67);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 25vw;
+    overflow: hidden;
+    align-items: center;
+justify-content: center;
+position: relative;
+flex-wrap: wrap;
+border-top-left-radius: 8px;
+border-bottom-left-radius: 8px;
+}
+.col1 h2{
+
+    margin-top: -260px;
+    line-height: 40px;
+    color: white;
+    
+}
+.col1 p{
+    color: grey;
+}
+.col1 img{
+height: 350px;
+width: 350px;
+
+padding: 0px;
+position: absolute;
+bottom: 0;
+}
+.col2{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 25vw;
+    flex-wrap: wrap;
+    overflow: hidden;
+    align-items: center;
+justify-content: center;
+border-top-right-radius: 8px;
+border-bottom-right-radius: 8px;
+}
+.content{
+    padding: 50px;
+    padding-bottom: 0px;
+  
+line-height: 20px;
+position: relative;
+}
+.content h1{
+    position: absolute;
+    top: 0;
+
+}
+span{
+    text-decoration: underline;
+    color: rgb(1,50,67);
+    font-weight: bold;
+}
+#one{
+    margin-top: 25px;
+    
+}
+h4{
+    text-align: center;
+    background-color: rgb(1,50,67);
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+label{
+    font-weight: bold;
+
+}
+.input{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+    @media only screen and (max-width: 768px){
+.main{
+    width: 100vw;
+    height: 100vh;
+    flex-wrap: wrap;
+ border: none;
+
+}
+        .col1{
+    width: 100vw;
+    height: 50vh;
+    border-top-left-radius: 0px;
+border-bottom-left-radius: 0px;
+  
+}
+.col2{
+    width: 100vw;
+ height: 60vh;
+
+}
+.content{
+    padding-top: 25px;
+    padding: 30px;
+}
+.content h1{
+    margin-top: -10px;
+}
+    }
+    
