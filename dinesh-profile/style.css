@@ -1,0 +1,247 @@
+:root{
+    --primary-font:font-family: 'Roboto', sans-serif;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+.conatiner{
+    display: flex;
+    background-color: white;
+    height: 100vh;
+    width: 80vw;
+    margin: auto;
+    flex-direction: column;
+}
+.navbar{
+   
+   display: flex;
+   height: 10%;
+   width:100% ;
+   z-index: 111;
+   justify-content: space-between;
+   align-items: center;
+   background-color: rgb(146, 143, 143);
+ flex-wrap: wrap;
+
+}
+.heading{
+    font-family: var(--primary-font);
+padding: 5px;
+margin: 10px;
+    cursor: pointer;
+}
+.heading:hover{
+    color: rgb(121, 11, 136);
+}
+
+
+.nav-item{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  
+}
+.nav-list{
+    font-weight: bold;
+    list-style: none;
+    padding: 15px;
+    font-family: var(--primary-font);
+}
+.nav-list:hover{
+    color: rgb(121, 11, 136);
+}
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 90%;
+  flex-wrap:wrap-reverse;
+}
+
+.social-icons{
+list-style: none;
+margin: 10px;
+cursor: pointer;
+position: relative;
+padding: 5px;
+font-size: 30px;
+
+color: rgb(98, 31, 107);
+
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.name{
+    line-height: 40px;
+}
+.name p{
+    line-height: 20px;
+    color: grey;
+    font-family: sans-serif;
+} 
+.button{
+   cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    background-color:  rgb(98, 31, 107);;
+color: white;
+}
+
+.pic img{
+
+    height: 300px;
+    width: 300px;
+}
+.about{
+    height: 75vh;
+    width: 80vw;
+    margin: auto;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+
+}
+.abt{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 75%;
+    width: 100%;
+    background:rgba(128, 128, 128, 0.466);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+flex-wrap: wrap;
+}
+.abt img{
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+
+}
+.abt p{
+    line-height: 25px;
+    font-family: sans-serif;
+    color:rgb(32, 32, 32);
+    border-left: 5px solid rgb(98, 31, 107 );
+    padding: 15px;
+    font-weight: bold;
+}
+ 
+.education{
+    height: 70vh;
+width:80vw;
+margin: auto;
+display: flex;
+align-items: center;
+justify-content: space-around;
+flex-wrap: wrap;
+
+}
+.education h1{
+    color:rgb(98, 31, 107 );
+}
+.clg{
+    color: grey;
+    margin-top: 10px;
+}
+.education h1{
+    text-align: center;
+}
+.education img{
+    height:300px;
+    width: 300px;
+}
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    height:50vh;
+    width: 80vw;
+    
+    margin: auto;
+    margin-top: 100px;
+    align-items: center;
+    justify-content: space-around;
+    background:rgba(128, 128, 128, 0.466);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.skills .box{
+   display: flex;
+justify-content: center;    
+    height: 200px;
+    width: 300px;
+ 
+}
+.one,.three{
+    color: rgb(98, 31, 107 );;
+}
+.two{
+    color: rgb(98, 31, 107 );;
+}
+tr{
+    padding: 15px;
+}
+.skills h1{
+    color:rgb(98, 31, 107 ) ;
+}
+.footer{
+    height: 20vh;
+    width: 80vw;
+    margin: auto;
+}
+.abt h3{
+    text-align: center;
+    padding: 10px;
+}
+@media only screen and (max-width:450px) {
+    .home{
+ margin-top: 100px;
+    }
+  
+    .social{
+        display: flex;
+        margin-top: 30px;
+    }
+    .about{
+        height: 100vh;
+    }
+    .abt{
+        margin-top: 100px;
+        height: 100%;
+    }
+    .abt img{
+        margin-top: 10px;
+    }
+    .abt p{
+        text-align: center;
+        border-top: 3px solid rgb(98, 31, 107);
+        border-left: none;
+        margin: 15px;
+    }
+    .education{
+        margin-top: 250px;
+  
+    }
+    .skills{
+        margin-top: 300px;
+        height: 100vh;
+    }
+    
+}
+
+
